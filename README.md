@@ -186,17 +186,6 @@ python generate_sample.py
 
 ---
 
-## 📋 Livrables
-
-| Livrable | Fichier | Statut |
-|----------|---------|--------|
-| Script Python 3 agents | `main.py` | ✅ |
-| Template Jinja2 réutilisable | `templates/newsletter.html.j2` | ✅ |
-| Newsletter HTML générée | `output/newsletter_exemple.html` | ✅ |
-| JSON Top 5 scorés | `output/top5_selectionnes.json` | ✅ |
-| README + instructions | `README.md` | ✅ |
-
----
 
 *Projet réalisé dans le cadre du Séminaire Agents IA — Master MPDAM 2024-2025*  
 *Enseignant : Pr. Habib SMEI*
