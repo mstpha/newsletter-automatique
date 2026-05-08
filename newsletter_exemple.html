@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — intelligence artificielle générative</title>
+  <style>
+    /* ── Reset & Base ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0e0e12;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #e8e6e0;
+      line-height: 1.7;
+    }
+
+    /* ── Wrapper ─────────────────────────────────────────── */
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #13131a;
+    }
+
+    /* ── Header ─────────────────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 50%, #16213e 100%);
+      padding: 52px 48px 44px;
+      border-bottom: 3px solid #e8b84b;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,184,75,0.15) 0%, transparent 70%);
+    }
+    .header-eyebrow {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #e8b84b;
+      margin-bottom: 16px;
+    }
+    .header-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .header-title span { color: #e8b84b; }
+    .header-date {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: #8a8a9a;
+      letter-spacing: 1px;
+    }
+
+    /* ── Intro ───────────────────────────────────────────── */
+    .intro-section {
+      padding: 40px 48px 32px;
+      border-left: 3px solid #e8b84b;
+      margin: 36px 48px;
+      background: rgba(232,184,75,0.04);
+    }
+    .intro-section p {
+      font-size: 16px;
+      color: #c8c6c0;
+      font-style: italic;
+    }
+
+    /* ── Divider ─────────────────────────────────────────── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0 48px;
+      margin: 8px 0 28px;
+    }
+    .divider-label {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #e8b84b;
+      white-space: nowrap;
+    }
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, #e8b84b44, transparent);
+    }
+
+    /* ── Article Card ────────────────────────────────────── */
+    .articles-list { padding: 0 48px; }
+
+    .article-card {
+      padding: 28px 0;
+      border-bottom: 1px solid #2a2a38;
+      position: relative;
+    }
+    .article-card:last-child { border-bottom: none; }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .article-rank {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: #0e0e12;
+      background: #e8b84b;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .article-source {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6a6a7a;
+    }
+    .article-date {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: #4a4a5a;
+      margin-left: auto;
+    }
+    .article-score {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: #e8b84b;
+      background: rgba(232,184,75,0.1);
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    .article-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f0eee8;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+    .article-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .article-title a:hover { color: #e8b84b; }
+
+    .article-summary {
+      font-size: 14px;
+      color: #9a9890;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .article-link {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: #e8b84b;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(232,184,75,0.4);
+      padding-bottom: 1px;
+    }
+    .article-link:hover { border-bottom-style: solid; }
+
+    /* ── CTA Section ─────────────────────────────────────── */
+    .cta-section {
+      margin: 36px 48px;
+      padding: 32px 36px;
+      background: linear-gradient(135deg, rgba(232,184,75,0.08), rgba(232,184,75,0.03));
+      border: 1px solid rgba(232,184,75,0.25);
+      border-radius: 4px;
+      text-align: center;
+    }
+    .cta-section p {
+      font-size: 15px;
+      color: #c8c6c0;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #0e0e12;
+      background: #e8b84b;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .cta-button:hover { background: #f0c858; }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    .footer {
+      padding: 32px 48px;
+      border-top: 1px solid #2a2a38;
+      text-align: center;
+    }
+    .footer p {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: #3a3a4a;
+      text-transform: uppercase;
+      line-height: 2;
+    }
+    .footer a { color: #5a5a6a; text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-eyebrow">Veille thématique automatisée · Édition hebdomadaire</div>
+    <div class="header-title">
+      L'essentiel sur<br><span>Intelligence Artificielle Générative</span>
+    </div>
+    <div class="header-date">08 May 2026</div>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <div class="intro-section">
+    <p>Cette semaine dans le monde de l'intelligence artificielle générative, l'actualité a été particulièrement dense. Annonces de nouveaux modèles, évolutions réglementaires en Europe et percées scientifiques majeures : les 5 articles sélectionnés par nos agents vous offrent un panorama complet des développements les plus importants. Bonne lecture !</p>
+  </div>
+
+  <!-- ARTICLES LABEL -->
+  <div class="divider">
+    <span class="divider-label">Sélection de la semaine</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ARTICLES -->
+  <div class="articles-list">
+    
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="article-rank">1</span>
+        <span class="article-source">Le Monde Informatique</span>
+        <span class="article-score">★ 10/10</span>
+        <span class="article-date">2025-05-06</span>
+      </div>
+      <div class="article-title">
+        <a href="https://example.com/gpt5-devoile" target="_blank">GPT-5 dévoilé : OpenAI franchit un cap décisif dans le raisonnement autonome</a>
+      </div>
+      <div class="article-summary">OpenAI a officiellement présenté GPT-5, son modèle le plus avancé à ce jour, capable de raisonnement multi-étapes et d'auto-correction. Le modèle surpasse ses prédécesseurs sur l'ensemble des benchmarks académiques et professionnels. Sa disponibilité commerciale est annoncée pour le troisième trimestre 2025.</div>
+      <a href="https://example.com/gpt5-devoile" class="article-link" target="_blank">Lire l'article complet →</a>
+    </div>
+    
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="article-rank">2</span>
+        <span class="article-source">Euractiv France</span>
+        <span class="article-score">★ 9/10</span>
+        <span class="article-date">2025-05-05</span>
+      </div>
+      <div class="article-title">
+        <a href="https://example.com/ue-ia-reglementation" target="_blank">L'Union Européenne finalise son cadre réglementaire pour les agents IA en entreprise</a>
+      </div>
+      <div class="article-summary">La Commission européenne a publié ses lignes directrices définitives encadrant l'usage d'agents IA autonomes dans les secteurs critiques. Les entreprises auront 18 mois pour se conformer aux nouvelles exigences de transparence et d'auditabilité. Des sanctions allant jusqu'à 6 % du chiffre d'affaires mondial sont prévues en cas de manquement.</div>
+      <a href="https://example.com/ue-ia-reglementation" class="article-link" target="_blank">Lire l'article complet →</a>
+    </div>
+    
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="article-rank">3</span>
+        <span class="article-source">TechCrunch France</span>
+        <span class="article-score">★ 9/10</span>
+        <span class="article-date">2025-05-04</span>
+      </div>
+      <div class="article-title">
+        <a href="https://example.com/anthropic-levee-fonds" target="_blank">Anthropic lève 4 milliards de dollars et annonce Claude 4 pour le mois prochain</a>
+      </div>
+      <div class="article-summary">Anthropic, le créateur du modèle Claude, a finalisé un nouveau tour de financement record valorisant la société à 61 milliards de dollars. Les fonds serviront à accélérer le développement de Claude 4, promis comme une avancée significative en matière de sécurité et de capacités multimodales. Le lancement est prévu pour juin 2025.</div>
+      <a href="https://example.com/anthropic-levee-fonds" class="article-link" target="_blank">Lire l'article complet →</a>
+    </div>
+    
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="article-rank">4</span>
+        <span class="article-source">MIT Technology Review</span>
+        <span class="article-score">★ 8/10</span>
+        <span class="article-date">2025-05-03</span>
+      </div>
+      <div class="article-title">
+        <a href="https://example.com/llm-auto-amelioration" target="_blank">Les modèles de langage commencent à s'auto-améliorer sans intervention humaine</a>
+      </div>
+      <div class="article-summary">Une équipe de chercheurs du MIT a publié une étude démontrant qu'un LLM peut identifier et corriger ses propres erreurs de raisonnement en boucle fermée. Cette capacité d'auto-amélioration, encore limitée à des domaines restreints, ouvre la voie à des systèmes d'IA véritablement autonomes. Les chercheurs insistent sur la nécessité d'un cadre éthique adapté.</div>
+      <a href="https://example.com/llm-auto-amelioration" class="article-link" target="_blank">Lire l'article complet →</a>
+    </div>
+    
+    <div class="article-card">
+      <div class="article-meta">
+        <span class="article-rank">5</span>
+        <span class="article-source">Les Échos</span>
+        <span class="article-score">★ 7/10</span>
+        <span class="article-date">2025-05-02</span>
+      </div>
+      <div class="article-title">
+        <a href="https://example.com/france-formation-ia" target="_blank">La France investit 500 millions d'euros dans la formation aux métiers de l'IA</a>
+      </div>
+      <div class="article-summary">Le gouvernement français a annoncé un plan national de formation de 500 millions d'euros visant à qualifier 200 000 professionnels aux métiers de l'intelligence artificielle d'ici 2027. Ce programme cible notamment les secteurs de la santé, de l'industrie et des services publics. Des partenariats avec les grandes écoles et les universités sont en cours de finalisation.</div>
+      <a href="https://example.com/france-formation-ia" class="article-link" target="_blank">Lire l'article complet →</a>
+    </div>
+    
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <p>Ces articles vous ont plu ? Partagez cette newsletter avec vos collègues et explorez les liens pour aller plus loin. Rendez-vous la semaine prochaine pour une nouvelle sélection !</p>
+    <a href="#" class="cta-button">Explorer tous les articles</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Newsletter générée automatiquement par un pipeline multi-agents IA<br>
+    Thème : intelligence artificielle générative · 08 May 2026 · © 2026<br>
+    <a href="#">Se désabonner</a> · <a href="#">Voir dans le navigateur</a></p>
+  </div>
+
+</div>
+</body>
+</html>

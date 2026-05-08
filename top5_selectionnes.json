@@ -1,0 +1,47 @@
+[
+  {
+    "title": "GPT-5 dévoilé : OpenAI franchit un cap décisif dans le raisonnement autonome",
+    "url": "https://example.com/gpt5-devoile",
+    "source": "Le Monde Informatique",
+    "published_at": "2025-05-06",
+    "summary": "OpenAI a officiellement présenté GPT-5, son modèle le plus avancé à ce jour, capable de raisonnement multi-étapes et d'auto-correction. Le modèle surpasse ses prédécesseurs sur l'ensemble des benchmarks académiques et professionnels. Sa disponibilité commerciale est annoncée pour le troisième trimestre 2025.",
+    "score": 10,
+    "justification": "Annonce majeure, très récente, d'intérêt direct pour tous les professionnels de l'IA."
+  },
+  {
+    "title": "L'Union Européenne finalise son cadre réglementaire pour les agents IA en entreprise",
+    "url": "https://example.com/ue-ia-reglementation",
+    "source": "Euractiv France",
+    "published_at": "2025-05-05",
+    "summary": "La Commission européenne a publié ses lignes directrices définitives encadrant l'usage d'agents IA autonomes dans les secteurs critiques. Les entreprises auront 18 mois pour se conformer aux nouvelles exigences de transparence et d'auditabilité. Des sanctions allant jusqu'à 6 % du chiffre d'affaires mondial sont prévues en cas de manquement.",
+    "score": 9,
+    "justification": "Impact réglementaire direct sur les entreprises, actualité très récente."
+  },
+  {
+    "title": "Anthropic lève 4 milliards de dollars et annonce Claude 4 pour le mois prochain",
+    "url": "https://example.com/anthropic-levee-fonds",
+    "source": "TechCrunch France",
+    "published_at": "2025-05-04",
+    "summary": "Anthropic, le créateur du modèle Claude, a finalisé un nouveau tour de financement record valorisant la société à 61 milliards de dollars. Les fonds serviront à accélérer le développement de Claude 4, promis comme une avancée significative en matière de sécurité et de capacités multimodales. Le lancement est prévu pour juin 2025.",
+    "score": 9,
+    "justification": "Annonce stratégique majeure dans l'écosystème IA générative."
+  },
+  {
+    "title": "Les modèles de langage commencent à s'auto-améliorer sans intervention humaine",
+    "url": "https://example.com/llm-auto-amelioration",
+    "source": "MIT Technology Review",
+    "published_at": "2025-05-03",
+    "summary": "Une équipe de chercheurs du MIT a publié une étude démontrant qu'un LLM peut identifier et corriger ses propres erreurs de raisonnement en boucle fermée. Cette capacité d'auto-amélioration, encore limitée à des domaines restreints, ouvre la voie à des systèmes d'IA véritablement autonomes. Les chercheurs insistent sur la nécessité d'un cadre éthique adapté.",
+    "score": 8,
+    "justification": "Avancée scientifique significative avec implications pratiques importantes."
+  },
+  {
+    "title": "La France investit 500 millions d'euros dans la formation aux métiers de l'IA",
+    "url": "https://example.com/france-formation-ia",
+    "source": "Les Échos",
+    "published_at": "2025-05-02",
+    "summary": "Le gouvernement français a annoncé un plan national de formation de 500 millions d'euros visant à qualifier 200 000 professionnels aux métiers de l'intelligence artificielle d'ici 2027. Ce programme cible notamment les secteurs de la santé, de l'industrie et des services publics. Des partenariats avec les grandes écoles et les universités sont en cours de finalisation.",
+    "score": 7,
+    "justification": "Politique publique significative avec impact direct sur le marché du travail IA."
+  }
+]

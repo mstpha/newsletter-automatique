@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Claude rattrape ChatGPT en silence : ces 200 milliards de dollars en sont la preuve",
+    "url": "https://www.journaldugeek.com/2026/05/06/claude-rattrape-chatgpt-en-silence-ces-200-milliards-de-dollars-en-sont-la-preuve/",
+    "source": "Journal du geek",
+    "published_at": "2026-05-06",
+    "summary": "Anthropic dépense 200 milliards.\nAvec Google Cloud sur 5 ans.\nPour créer l'IA Claude.",
+    "score": 8,
+    "justification": "L'article traite de la création d'une IA générative nommée Claude. Actualite : 3, Profondeur : 3, Interet : 2"
+  },
+  {
+    "title": "Ce projet secret d’OpenAI rend votre smartphone obsolète : voici tout ce qu’on sait, pour le moment",
+    "url": "https://www.presse-citron.net/ce-projet-secret-dopenai-rend-votre-smartphone-obsolete-voici-tout-ce-quon-sait-pour-le-moment/",
+    "source": "Presse-citron",
+    "published_at": "2026-05-05",
+    "summary": "OpenAI accélère projet.\n Smartphone obsolète bientôt.\nProjet secret avancé.",
+    "score": 8,
+    "justification": "L'article traite d'un projet secret d'OpenAI qui pourrait rendre les smartphones obsolètes, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 3, Profondeur : 3, Interet : 2"
+  },
+  {
+    "title": "\"L'intelligence est le moteur, le contexte est le carburant\" : comment Atlassian veut imposer son IA en entreprise",
+    "url": "https://www.zdnet.fr/actualites/lintelligence-est-le-moteur-le-contexte-est-le-carburant-comment-atlassian-veut-imposer-son-ia-en-entreprise-494678.htm",
+    "source": "ZDNet France",
+    "published_at": "2026-05-07",
+    "summary": "Atlassian couple Rovo à Teamwork Graph.\nCela améliore la précision de 44 %.\nAtlassian mise sur l'IA en entreprise.",
+    "score": 7,
+    "justification": "L'article traite de l'utilisation de l'IA en entreprise pour améliorer la précision, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 3, Interet : 2"
+  },
+  {
+    "title": "L’AGI pourrait arriver en 2030… mais pas avec les IA actuelles, prévient Demis Hassabis patron de Google DeepMind",
+    "url": "https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-agi-pourrait-arriver-2030-mais-pas-ia-actuelles-previent-demis-hassabis-patron-google-deepmind-134248/",
+    "source": "Futura",
+    "published_at": "2026-05-04",
+    "summary": "L'AGI arrive en 2030.\nMais pas avec les IA actuelles.\nDemis Hassabis prévient.",
+    "score": 7,
+    "justification": "L'article traite de l'AGI et de son arriver prévue en 2030, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 3, Interet : 2"
+  },
+  {
+    "title": "\"J'ai testé l'application IA de santé la plus avancée du marché : elle m'a bluffé\"",
+    "url": "https://www.journaldunet.com/intelligence-artificielle/1550153-j-ai-teste-l-application-ia-de-sante-la-plus-avancee-du-marche-elle-m-a-bluffe/",
+    "source": "JDN",
+    "published_at": "2026-05-07",
+    "summary": "Bevel utilise l'IA. \nElle transforme données. \nElle donne conseils.",
+    "score": 6,
+    "justification": "L'article traite d'une application d'IA qui utilise des données pour donner des conseils, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 2, Interet : 2"
+  }
+]
