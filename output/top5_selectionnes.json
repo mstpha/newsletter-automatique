@@ -1,47 +1,47 @@
 [
   {
-    "title": "Claude rattrape ChatGPT en silence : ces 200 milliards de dollars en sont la preuve",
-    "url": "https://www.journaldugeek.com/2026/05/06/claude-rattrape-chatgpt-en-silence-ces-200-milliards-de-dollars-en-sont-la-preuve/",
-    "source": "Journal du geek",
-    "published_at": "2026-05-06",
-    "summary": "Anthropic dépense 200 milliards.\nAvec Google Cloud sur 5 ans.\nPour créer l'IA Claude.",
-    "score": 8,
-    "justification": "L'article traite de la création d'une IA générative nommée Claude. Actualite : 3, Profondeur : 3, Interet : 2"
+    "title": "L’AGI pourrait arriver en 2030… mais pas avec les IA actuelles, prévient Demis Hassabis patron de Google DeepMind",
+    "url": "https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-agi-pourrait-arriver-2030-mais-pas-ia-actuelles-previent-demis-hassabis-patron-google-deepmind-134248/",
+    "source": "Futura",
+    "published_at": "2026-05-04",
+    "summary": "L'AGI arrive peut-être en 2030.\nDemis Hassabis prévient les experts.\nIA actuelles insuffisantes.",
+    "score": 9,
+    "justification": "L'article traite de l'avenir de l'IA générative et de ses limites actuelles. Actualité : 3, Profondeur : 3, Intérêt : 3"
   },
   {
     "title": "Ce projet secret d’OpenAI rend votre smartphone obsolète : voici tout ce qu’on sait, pour le moment",
     "url": "https://www.presse-citron.net/ce-projet-secret-dopenai-rend-votre-smartphone-obsolete-voici-tout-ce-quon-sait-pour-le-moment/",
     "source": "Presse-citron",
     "published_at": "2026-05-05",
-    "summary": "OpenAI accélère projet.\n Smartphone obsolète bientôt.\nProjet secret avancé.",
+    "summary": "OpenAI crée un nouveau smartphone. \nIl remplacera les anciens. \nIl est en développement.",
     "score": 8,
-    "justification": "L'article traite d'un projet secret d'OpenAI qui pourrait rendre les smartphones obsolètes, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 3, Profondeur : 3, Interet : 2"
+    "justification": "L'article traite d'un projet d'IA générative pour les smartphones. Actualité : 3, Profondeur : 3, Intérêt : 2"
   },
   {
-    "title": "\"L'intelligence est le moteur, le contexte est le carburant\" : comment Atlassian veut imposer son IA en entreprise",
-    "url": "https://www.zdnet.fr/actualites/lintelligence-est-le-moteur-le-contexte-est-le-carburant-comment-atlassian-veut-imposer-son-ia-en-entreprise-494678.htm",
-    "source": "ZDNet France",
-    "published_at": "2026-05-07",
-    "summary": "Atlassian couple Rovo à Teamwork Graph.\nCela améliore la précision de 44 %.\nAtlassian mise sur l'IA en entreprise.",
+    "title": "Claude rattrape ChatGPT en silence : ces 200 milliards de dollars en sont la preuve",
+    "url": "https://www.journaldugeek.com/2026/05/06/claude-rattrape-chatgpt-en-silence-ces-200-milliards-de-dollars-en-sont-la-preuve/",
+    "source": "Journal du geek",
+    "published_at": "2026-05-06",
+    "summary": "Claude rattrape ChatGPT.\nAnthropic passe accord avec Google.\n200 milliards de dollars.",
     "score": 7,
-    "justification": "L'article traite de l'utilisation de l'IA en entreprise pour améliorer la précision, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 3, Interet : 2"
-  },
-  {
-    "title": "L’AGI pourrait arriver en 2030… mais pas avec les IA actuelles, prévient Demis Hassabis patron de Google DeepMind",
-    "url": "https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-agi-pourrait-arriver-2030-mais-pas-ia-actuelles-previent-demis-hassabis-patron-google-deepmind-134248/",
-    "source": "Futura",
-    "published_at": "2026-05-04",
-    "summary": "L'AGI arrive en 2030.\nMais pas avec les IA actuelles.\nDemis Hassabis prévient.",
-    "score": 7,
-    "justification": "L'article traite de l'AGI et de son arriver prévue en 2030, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 3, Interet : 2"
+    "justification": "L'article traite de la concurrence entre les IA, y compris celles qui utilisent des capacités génératives. Actualité : 3, Profondeur : 2, Intérêt : 2"
   },
   {
     "title": "\"J'ai testé l'application IA de santé la plus avancée du marché : elle m'a bluffé\"",
     "url": "https://www.journaldunet.com/intelligence-artificielle/1550153-j-ai-teste-l-application-ia-de-sante-la-plus-avancee-du-marche-elle-m-a-bluffe/",
     "source": "JDN",
     "published_at": "2026-05-07",
-    "summary": "Bevel utilise l'IA. \nElle transforme données. \nElle donne conseils.",
+    "summary": "Bevel utilise l'IA pour la santé.\nIl transforme les données en conseils.\nL'IA est à mémoire persistante.",
     "score": 6,
-    "justification": "L'article traite d'une application d'IA qui utilise des données pour donner des conseils, mais ne traite pas spécifiquement de l'intelligence artificielle générative. Actualite : 2, Profondeur : 2, Interet : 2"
+    "justification": "L'article traite de l'utilisation de l'IA en santé, mais ne se concentre pas spécifiquement sur l'IA générative. Actualité : 2, Profondeur : 2, Intérêt : 2"
+  },
+  {
+    "title": "iOS 27 : les modèles d’IA tiers pourraient prendre le dessus sur ceux d’Apple",
+    "url": "https://www.igen.fr/ios/2026/05/ios-27-les-modeles-dia-tiers-pourraient-prendre-le-dessus-sur-ceux-dapple-155933",
+    "source": "iGeneration",
+    "published_at": "2026-05-05",
+    "summary": "iOS 27 favorise l'IA.\nLes modèles d'IA tiers sont autorisés.\nL'ouverture est inédite.",
+    "score": 6,
+    "justification": "L'article traite de l'utilisation de l'IA sur les appareils mobiles, y compris les modèles d'IA générative. Actualité : 2, Profondeur : 2, Intérêt : 2"
   }
 ]

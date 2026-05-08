@@ -112,19 +112,20 @@
       gap: 14px;
       margin-bottom: 10px;
     }
-    .article-rank {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      font-weight: 700;
-      color: #0e0e12;
-      background: #e8b84b;
-      width: 26px; height: 26px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
+.article-rank {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0e0e12;
+  background: #e8b84b;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
     .article-source {
       font-family: 'Courier New', monospace;
       font-size: 10px;
@@ -239,7 +240,7 @@
 
   <!-- INTRODUCTION -->
   <div class="intro-section">
-    <p>Cette semaine dans le monde de l'intelligence artificielle générative, l'actualité a été particulièrement dense. Annonces de nouveaux modèles, évolutions réglementaires en Europe et percées scientifiques majeures : les 5 articles sélectionnés par nos agents vous offrent un panorama complet des développements les plus importants. Bonne lecture !</p>
+    <p>Dans ce numéro de notre newsletter, nous vous présentons les dernières avancées en matière d'intelligence artificielle générative, un domaine en constante évolution. Nous avons sélectionné 5 articles pertinents pour vous informer des derniers développements et innovations dans ce domaine dynamique.</p>
   </div>
 
   <!-- ARTICLES LABEL -->
@@ -254,74 +255,85 @@
     <div class="article-card">
       <div class="article-meta">
         <span class="article-rank">1</span>
-        <span class="article-source">Le Monde Informatique</span>
-        <span class="article-score">★ 10/10</span>
-        <span class="article-date">2025-05-06</span>
+        <span class="article-source">Futura</span>
+        <span class="article-score">★ 9/10</span>
+        <span class="article-date">2026-05-04</span>
       </div>
       <div class="article-title">
-        <a href="https://example.com/gpt5-devoile" target="_blank">GPT-5 dévoilé : OpenAI franchit un cap décisif dans le raisonnement autonome</a>
+        <a href="https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-agi-pourrait-arriver-2030-mais-pas-ia-actuelles-previent-demis-hassabis-patron-google-deepmind-134248/" target="_blank">L’AGI pourrait arriver en 2030… mais pas avec les IA actuelles, prévient Demis Hassabis patron de Google DeepMind</a>
       </div>
-      <div class="article-summary">OpenAI a officiellement présenté GPT-5, son modèle le plus avancé à ce jour, capable de raisonnement multi-étapes et d'auto-correction. Le modèle surpasse ses prédécesseurs sur l'ensemble des benchmarks académiques et professionnels. Sa disponibilité commerciale est annoncée pour le troisième trimestre 2025.</div>
-      <a href="https://example.com/gpt5-devoile" class="article-link" target="_blank">Lire l'article complet →</a>
+      <div class="article-summary">L'AGI arrive peut-être en 2030.
+Demis Hassabis prévient les experts.
+IA actuelles insuffisantes.</div>
+      <a href="https://www.futura-sciences.com/tech/actualites/intelligence-artificielle-agi-pourrait-arriver-2030-mais-pas-ia-actuelles-previent-demis-hassabis-patron-google-deepmind-134248/" class="article-link" target="_blank">Lire l'article complet →</a>
     </div>
     
     <div class="article-card">
       <div class="article-meta">
         <span class="article-rank">2</span>
-        <span class="article-source">Euractiv France</span>
-        <span class="article-score">★ 9/10</span>
-        <span class="article-date">2025-05-05</span>
+        <span class="article-source">Presse-citron</span>
+        <span class="article-score">★ 8/10</span>
+        <span class="article-date">2026-05-05</span>
       </div>
       <div class="article-title">
-        <a href="https://example.com/ue-ia-reglementation" target="_blank">L'Union Européenne finalise son cadre réglementaire pour les agents IA en entreprise</a>
+        <a href="https://www.presse-citron.net/ce-projet-secret-dopenai-rend-votre-smartphone-obsolete-voici-tout-ce-quon-sait-pour-le-moment/" target="_blank">Ce projet secret d’OpenAI rend votre smartphone obsolète : voici tout ce qu’on sait, pour le moment</a>
       </div>
-      <div class="article-summary">La Commission européenne a publié ses lignes directrices définitives encadrant l'usage d'agents IA autonomes dans les secteurs critiques. Les entreprises auront 18 mois pour se conformer aux nouvelles exigences de transparence et d'auditabilité. Des sanctions allant jusqu'à 6 % du chiffre d'affaires mondial sont prévues en cas de manquement.</div>
-      <a href="https://example.com/ue-ia-reglementation" class="article-link" target="_blank">Lire l'article complet →</a>
+      <div class="article-summary">OpenAI crée un nouveau smartphone. 
+Il remplacera les anciens. 
+Il est en développement.</div>
+      <a href="https://www.presse-citron.net/ce-projet-secret-dopenai-rend-votre-smartphone-obsolete-voici-tout-ce-quon-sait-pour-le-moment/" class="article-link" target="_blank">Lire l'article complet →</a>
     </div>
     
     <div class="article-card">
       <div class="article-meta">
         <span class="article-rank">3</span>
-        <span class="article-source">TechCrunch France</span>
-        <span class="article-score">★ 9/10</span>
-        <span class="article-date">2025-05-04</span>
+        <span class="article-source">Journal du geek</span>
+        <span class="article-score">★ 7/10</span>
+        <span class="article-date">2026-05-06</span>
       </div>
       <div class="article-title">
-        <a href="https://example.com/anthropic-levee-fonds" target="_blank">Anthropic lève 4 milliards de dollars et annonce Claude 4 pour le mois prochain</a>
+        <a href="https://www.journaldugeek.com/2026/05/06/claude-rattrape-chatgpt-en-silence-ces-200-milliards-de-dollars-en-sont-la-preuve/" target="_blank">Claude rattrape ChatGPT en silence : ces 200 milliards de dollars en sont la preuve</a>
       </div>
-      <div class="article-summary">Anthropic, le créateur du modèle Claude, a finalisé un nouveau tour de financement record valorisant la société à 61 milliards de dollars. Les fonds serviront à accélérer le développement de Claude 4, promis comme une avancée significative en matière de sécurité et de capacités multimodales. Le lancement est prévu pour juin 2025.</div>
-      <a href="https://example.com/anthropic-levee-fonds" class="article-link" target="_blank">Lire l'article complet →</a>
+      <div class="article-summary">Claude rattrape ChatGPT.
+Anthropic passe accord avec Google.
+200 milliards de dollars.</div>
+      <a href="https://www.journaldugeek.com/2026/05/06/claude-rattrape-chatgpt-en-silence-ces-200-milliards-de-dollars-en-sont-la-preuve/" class="article-link" target="_blank">Lire l'article complet →</a>
     </div>
     
     <div class="article-card">
       <div class="article-meta">
         <span class="article-rank">4</span>
-        <span class="article-source">MIT Technology Review</span>
-        <span class="article-score">★ 8/10</span>
-        <span class="article-date">2025-05-03</span>
+        <span class="article-source">JDN</span>
+        <span class="article-score">★ 6/10</span>
+        <span class="article-date">2026-05-07</span>
       </div>
       <div class="article-title">
-        <a href="https://example.com/llm-auto-amelioration" target="_blank">Les modèles de langage commencent à s'auto-améliorer sans intervention humaine</a>
+        <a href="https://www.journaldunet.com/intelligence-artificielle/1550153-j-ai-teste-l-application-ia-de-sante-la-plus-avancee-du-marche-elle-m-a-bluffe/" target="_blank">"J'ai testé l'application IA de santé la plus avancée du marché : elle m'a bluffé"</a>
       </div>
-      <div class="article-summary">Une équipe de chercheurs du MIT a publié une étude démontrant qu'un LLM peut identifier et corriger ses propres erreurs de raisonnement en boucle fermée. Cette capacité d'auto-amélioration, encore limitée à des domaines restreints, ouvre la voie à des systèmes d'IA véritablement autonomes. Les chercheurs insistent sur la nécessité d'un cadre éthique adapté.</div>
-      <a href="https://example.com/llm-auto-amelioration" class="article-link" target="_blank">Lire l'article complet →</a>
+      <div class="article-summary">Bevel utilise l'IA pour la santé.
+Il transforme les données en conseils.
+L'IA est à mémoire persistante.</div>
+      <a href="https://www.journaldunet.com/intelligence-artificielle/1550153-j-ai-teste-l-application-ia-de-sante-la-plus-avancee-du-marche-elle-m-a-bluffe/" class="article-link" target="_blank">Lire l'article complet →</a>
     </div>
     
     <div class="article-card">
       <div class="article-meta">
         <span class="article-rank">5</span>
-        <span class="article-source">Les Échos</span>
-        <span class="article-score">★ 7/10</span>
-        <span class="article-date">2025-05-02</span>
+        <span class="article-source">iGeneration</span>
+        <span class="article-score">★ 6/10</span>
+        <span class="article-date">2026-05-05</span>
       </div>
       <div class="article-title">
-        <a href="https://example.com/france-formation-ia" target="_blank">La France investit 500 millions d'euros dans la formation aux métiers de l'IA</a>
+        <a href="https://www.igen.fr/ios/2026/05/ios-27-les-modeles-dia-tiers-pourraient-prendre-le-dessus-sur-ceux-dapple-155933" target="_blank">iOS 27 : les modèles d’IA tiers pourraient prendre le dessus sur ceux d’Apple</a>
       </div>
-      <div class="article-summary">Le gouvernement français a annoncé un plan national de formation de 500 millions d'euros visant à qualifier 200 000 professionnels aux métiers de l'intelligence artificielle d'ici 2027. Ce programme cible notamment les secteurs de la santé, de l'industrie et des services publics. Des partenariats avec les grandes écoles et les universités sont en cours de finalisation.</div>
-      <a href="https://example.com/france-formation-ia" class="article-link" target="_blank">Lire l'article complet →</a>
+      <div class="article-summary">iOS 27 favorise l'IA.
+Les modèles d'IA tiers sont autorisés.
+L'ouverture est inédite.</div>
+      <a href="https://www.igen.fr/ios/2026/05/ios-27-les-modeles-dia-tiers-pourraient-prendre-le-dessus-sur-ceux-dapple-155933" class="article-link" target="_blank">Lire l'article complet →</a>
     </div>
     
   </div>
+
 
   <!-- CTA -->
   <div class="cta-section">
@@ -335,6 +347,7 @@
     Thème : intelligence artificielle générative · 08 May 2026 · © 2026<br>
     <a href="#">Se désabonner</a> · <a href="#">Voir dans le navigateur</a></p>
   </div>
+
 
 </div>
 </body>
